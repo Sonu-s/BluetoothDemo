@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="turn bluretooth off"
+        android:id="@+id/turnBluetoothOff"
+        android:paddingTop="6dp"
+        android:paddingRight="6dp"
+        android:paddingLeft="6dp"
+        android:paddingBottom="6dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginLeft="5dp"
+        android:onClick="turnBluetoothOff"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="find discoverable device "
+        android:id="@+id/findDiscoverableDevice"
+        android:layout_below="@+id/turnBluetoothOff"
+        android:onClick="findDiscoverableDevice"
+        android:paddingTop="6dp"
+        android:paddingRight="6dp"
+        android:paddingLeft="6dp"
+        android:paddingBottom="6dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginLeft="5dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="paired device "
+        android:id="@+id/pairedDevice"
+        android:layout_below="@+id/findDiscoverableDevice"
+        android:onClick="pairedDevice"
+        android:paddingTop="6dp"
+        android:paddingRight="6dp"
+        android:paddingLeft="6dp"
+        android:paddingBottom="6dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginLeft="5dp"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/pairedDevice"
+        android:id="@+id/listView"
+        android:layout_marginTop="8dp">
+
+    </ListView>
+
+
+</RelativeLayout>
